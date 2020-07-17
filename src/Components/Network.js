@@ -16,7 +16,7 @@ class Network extends Component {
     }
 
     unsuccessfulRequest = () => {
-        axios.get('https://pokeapi.co/api/v2/pokmon/2')
+        axios.get('https://pokeapi.co/api/v2/pokemon/2')
         .then(res => this.setState({pokemon: res.data}))
         .catch(err => console.log(err))
     }
